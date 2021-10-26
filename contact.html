@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a33d5e6814.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Captain Autos</title>
+</head>
+<body>
+  <div id="nav-bar">
+    <h1 class="logo"><span class="lead"><i class="fas fa-car fa-1.7x"></i> Captain</span> Autos</h1>
+    <ul>
+      <li><a href="index.html">Home </a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a class="current" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  
+  <div class="container">
+    <h1><span>Contact</span> Us</h1>
+    <p>Please fill out the form below to contact us.</p>
+
+    <form action="process.php">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name"> 
+      </div>
+      <div>
+        <label for="phone number">Phone Number</label>
+        <input type="text" name="phone number" id="phone number" placeholder="Enter a valid phone number">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter a valid Email">
+      </div>
+      <div class="age ">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Enter your age">
+      </div>
+      <div>
+        <label for="gender" class="select">Sex</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div>
+        <label for="car brands" class="select">Car Brand</label>
+        <select name="car brands" id="car brands">
+          <option value="none">None</option>
+          <option value="lexus">Lexus</option>
+          <option value="toyota">Toyota</option>
+          <option value="mazda">Mazda</option>
+          <option value="porsche">Porsche</option>
+          <option value="honda">Honda</option>
+          <option value="ford">Ford</option>    
+          <option value="hyundai">Hyundai</option>
+          <option value="bmw">BMW</option>
+          <option value="mercedes benz">Mercedes Benz</option>
+          <option value="acura">Acura</option>
+          <option value="range rover">Range Rover</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="50" rows="5" placeholder="Enter your message"></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <div class="social">
+      <p>You can Like & Suscribe to our social media pages : </p>
+      <ul>
+        <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-3x" ></i></a></li>
+        <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i></a></li>
+        <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></li>
+        <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+        <li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube fa-3x"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>Copywright &copy; 2021. &nbsp; All Rights Reserved</p>
+  </footer>
+</body>
+</html>

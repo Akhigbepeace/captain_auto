@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+/* Utility Classes */
+span {
+  color: coral;
+}
+
+#nav-bar {
+  background: #333;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 1;
+}
+
+#nav-bar .logo {
+  color: #fff;
+}
+
+#nav-bar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#nav-bar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#nav-bar ul li a:hover,
+.current {
+  background: coral;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease-in 0.4s;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url(../img/jon-koop-khYVyHiNZo0-unsplash.jpg) no-repeat
+    center center/cover;
+  height: 100vh;
+  margin-top: -3.5rem;
+}
+
+#showcase .showcase-content {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 9rem;
+  padding: 0 2rem;
+  height: 100%;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+#showcase .showcase-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+#showcase .showcase-content .main {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fff;
+  background: orangered;
+  transition: all ease-in-out 0.75s;
+}
+
+#showcase .showcase-content .main:hover {
+  background: #ddd;
+  color: #111;
+}
+
+#showcase .showcase-content a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  background: #ddd;
+  color: #111;
+  transition: all ease-in-out 0.75s;
+}
+
+#showcase .showcase-content a:hover {
+  color: #fff;
+  background: orangered;
+}
+
+/* About */
+#about {
+  background: #ddd;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+#about .info-left {
+  padding: 1rem 0.75rem;
+  /* margin: 3rem 13rem; */
+}
+
+#about .info-left h1 {
+  margin-bottom: 2rem;
+  display: inline;
+  padding: 1rem 1rem;
+}
+
+#about .info-left p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  padding: 1rem 0.75rem;
+}
+
+#about .info-right img {
+  width: 50%;
+  border: 4px solid black;
+  border-radius: 50%;
+  margin: 2rem 23rem;
+}
+
+#testimonials {
+  background: #333 url("../img/bowie-deshazo-eZWNxRVRo0w-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+#testimonials .content {
+  background: rgba(0, 0, 0, 0.75);
+  height: 100vh;
+}
+
+#testimonials .content .testimonial {
+  background: coral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.75rem;
+  margin: 1.5rem 0.5rem;
+}
+
+#testimonials .content h2 {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#testimonials .testimonial img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+#testimonials .testimonial p {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Services Page */
+.services {
+  background: #aaa;
+}
+
+.services h1 {
+  background: coral;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  /* margin: 1rem; */
+}
+
+.services .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem 3rem;
+}
+
+.services .item img {
+  background: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 5.3rem;
+}
+
+.services .items .item div {
+  text-align: center;
+}
+
+.services .items .item div h3 {
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.services .items .item div p {
+  font-size: 1.2rem;
+}
+
+/* Contact Page */
+.container {
+  background: #eee;
+}
+
+.container h1 {
+  font-size: 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container p {
+  font-size: 1.3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  margin-top: -1rem;
+  text-align: center;
+}
+
+.container form {
+  padding: 1rem;
+}
+
+.container label {
+  display: block;
+  margin: 5px;
+  font-size: 1.1rem;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.container input,
+textarea {
+  width: 50%;
+  padding: 0.75rem;
+  margin: 0.1rem 0;
+  border: #777 2px solid;
+  border-radius: 10px;
+}
+
+.container .age label {
+  margin-top: 0.2rem;
+}
+
+.container .age input {
+  margin-top: -0.2rem;
+  width: 11%;
+  padding: 0.5rem;
+}
+
+.container select {
+  width: 15%;
+  padding: 0.5rem;
+  border: #777 2px solid;
+  border-radius: 10px;
+}
+
+.container .select {
+  margin-top: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+
+button {
+  background: #777;
+  width: 10%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+  background: coral;
+}
+
+.container .social p {
+  margin: 0.75rem;
+  font-size: 1.3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .social ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.container .social ul li a {
+  color: #333;
+}
+
+.container .social ul li a:hover {
+  color: coral;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
